@@ -1,0 +1,130 @@
+/**
+ * Catppuccin Mocha theme
+ * Color palette copied from https://catppuccin.com/palette
+ * https://github.com/hiimsergey/rofi-catppuccin
+ */
+
+* {
+    rosewater: #f4dbd6;
+  flamingo: #f0c6c6;
+  pink: #f5bde6;
+  mauve: #c6a0f6;
+  red: #ed8796;
+  maroon: #ee99a0;
+  peach: #f5a97f;
+  yellow: #eed49f;
+  green: #a6da95;
+  teal: #8bd5ca;
+  sky: #91d7e3;
+  sapphire: #7dc4e4;
+  blue: #8aadf4;
+  lavender: #b7bdf8;
+  text: #cad3f5;
+  subtext1: #b8c0e0;
+  subtext0: #a5adcb;
+  overlay2: #939ab7;
+  overlay1: #8087a2;
+  overlay0: #6e738d;
+  surface2: #5b6078;
+  surface1: #494d64;
+  surface0: #363a4f;
+  base: #24273a;
+  mantle: #1e2030;
+  crust: #181926;
+
+    background-color: @base;
+}
+
+window {
+    height: 800;
+    width: 800;
+
+    border: 3;
+    border-radius: 10;
+    border-color: @maroon;
+}
+
+mainbox {
+    spacing: 0;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    color: @text;
+    padding: 14;
+    background-color: @base;
+}
+
+message {
+    padding: 10;
+    background-color: @overlay0;
+}
+
+listview {
+    padding: 8;
+    border-radius: 0 0 10 10;
+    border: 2 2 2 2;
+    border-color: @base;
+    background-color: @base;
+    dynamic: false;
+}
+
+textbox {
+    text-color: @text;
+    background-color: inherit;
+}
+
+error-message {
+    border: 20 20 20 20;
+}
+
+entry, prompt, case-indicator {
+    text-color: inherit;
+}
+
+prompt {
+    margin: 0 10 0 0;
+}
+
+element {
+    padding: 5;
+    vertical-align: 0.5;
+    border-radius: 10;
+    background-color: @surface0;
+}
+
+element.selected.normal {
+    background-color: @overlay0;
+}
+
+element.alternate.normal {
+    background-color: inherit;
+}
+
+element.normal.active, element.alternate.active {
+    background-color: @peach;
+}
+
+element.selected.active {
+    background-color: @green;
+}
+
+element.normal.urgent, element.alternate.urgent {
+    background-color: @red;
+}
+
+element.selected.urgent {
+    background-color: @mauve;
+}
+
+element-text, element-icon {
+    size: 40;
+    margin: 0 10 0 0;
+    vertical-align: 0.5;
+    background-color: inherit;
+    text-color: @text;
+}
+
+element-text .active, element-text .urgent {
+    text-color: @base;
+}

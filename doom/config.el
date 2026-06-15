@@ -32,8 +32,9 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-font (font-spec :family "MesloLGS Nerd Font Mono" :size 18))
-(setq doom-theme 'doom-gruvbox)
+(setq doom-font (font-spec :family "MesloLGS Nerd Font Mono" :size 24))
+(setq doom-theme 'doom-nord)
+;; (setq catppuccin-flavor 'macchiato) ;; or 'latte, 'frappe, or 'mocha
 
 (setq tab-always-indent 'complete)
 
